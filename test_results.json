@@ -1,0 +1,15 @@
+{
+    "test_gen_len": 60.0757,
+    "test_loss": 1.4224162101745605,
+    "test_mem_cpu_alloc_delta": 82666029,
+    "test_mem_cpu_peaked_delta": 2572070,
+    "test_mem_gpu_alloc_delta": 0,
+    "test_mem_gpu_peaked_delta": 1441433088,
+    "test_rouge1": 41.3174,
+    "test_rouge2": 20.8716,
+    "test_rougeL": 32.1337,
+    "test_rougeLsum": 38.4149,
+    "test_runtime": 34.32,
+    "test_samples": 819,
+    "test_samples_per_second": 23.864
+}
