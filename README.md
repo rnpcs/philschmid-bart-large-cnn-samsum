@@ -15,7 +15,35 @@ widget:
     Jeff: ok.
     Jeff: and how can I get started? 
     Jeff: where can I find documentation? 
-    Philipp: ok, ok you can find everything here. https://huggingface.co/blog/the-partnership-amazon-sagemaker-and-hugging-face 
+    Philipp: ok, ok you can find everything here. https://huggingface.co/blog/the-partnership-amazon-sagemaker-and-hugging-face
+model-index:
+- name: bart-large-cnn-samsum
+  results:
+  - task: 
+      name: Abstractive Text Summarization
+      type: abstractive-text-summarization
+    dataset:
+      name: "SAMSum Corpus: A Human-annotated Dialogue Dataset for Abstractive Summarization" 
+      type: samsum
+    metrics:
+       - name: Validation ROGUE-1
+         type: rogue-1
+         value: 42.621
+       - name: Validation ROGUE-2
+         type: rogue-2
+         value: 21.9825
+       - name: Validation ROGUE-L
+         type: rogue-l
+         value: 33.034
+       - name: Test ROGUE-1
+         type: rogue-1
+         value: 41.3174
+       - name: Test ROGUE-2
+         type: rogue-2
+         value: 20.8716
+       - name: Test ROGUE-L
+         type: rogue-l
+         value: 32.1337 
 ---
 
 ## `bart-large-cnn-samsum`
