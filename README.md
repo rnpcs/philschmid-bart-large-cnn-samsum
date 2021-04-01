@@ -8,14 +8,6 @@ tags:
 license: apache-2.0
 datasets:
 - samsum
-widget:
-- text: | 
-    Jeff: Can I train a 🤗 Transformers model on Amazon SageMaker? 
-    Philipp: Sure you can use the new Hugging Face Deep Learning Container. 
-    Jeff: ok.
-    Jeff: and how can I get started? 
-    Jeff: where can I find documentation? 
-    Philipp: ok, ok you can find everything here. https://huggingface.co/blog/the-partnership-amazon-sagemaker-and-hugging-face 
 model-index:
 - name: bart-large-cnn-samsum
   results:
@@ -44,6 +36,14 @@ model-index:
        - name: Test ROGUE-L
          type: rogue-l
          value: 32.1337
+widget:
+- text: | 
+    Jeff: Can I train a 🤗 Transformers model on Amazon SageMaker? 
+    Philipp: Sure you can use the new Hugging Face Deep Learning Container. 
+    Jeff: ok.
+    Jeff: and how can I get started? 
+    Jeff: where can I find documentation? 
+    Philipp: ok, ok you can find everything here. https://huggingface.co/blog/the-partnership-amazon-sagemaker-and-hugging-face 
 ---
 
 ## `bart-large-cnn-samsum`
