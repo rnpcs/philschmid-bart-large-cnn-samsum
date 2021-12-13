@@ -5,7 +5,6 @@ tags:
 - sagemaker
 - bart
 - summarization
-license: apache-2.0
 datasets:
 - samsum
 widget:
