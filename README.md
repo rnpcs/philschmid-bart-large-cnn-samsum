@@ -8,41 +8,71 @@ tags:
 datasets:
 - samsum
 widget:
-- text: | 
-    Jeff: Can I train a 🤗 Transformers model on Amazon SageMaker? 
-    Philipp: Sure you can use the new Hugging Face Deep Learning Container. 
-    Jeff: ok.
-    Jeff: and how can I get started? 
-    Jeff: where can I find documentation? 
-    Philipp: ok, ok you can find everything here. https://huggingface.co/blog/the-partnership-amazon-sagemaker-and-hugging-face
+- text: "Jeff: Can I train a \U0001F917 Transformers model on Amazon SageMaker? \n\
+    Philipp: Sure you can use the new Hugging Face Deep Learning Container. \nJeff:\
+    \ ok.\nJeff: and how can I get started? \nJeff: where can I find documentation?\
+    \ \nPhilipp: ok, ok you can find everything here. https://huggingface.co/blog/the-partnership-amazon-sagemaker-and-hugging-face\n"
 model-index:
 - name: bart-large-cnn-samsum
   results:
-  - task: 
+  - task:
       name: Abstractive Text Summarization
       type: abstractive-text-summarization
     dataset:
-      name: "SAMSum Corpus: A Human-annotated Dialogue Dataset for Abstractive Summarization" 
+      name: 'SAMSum Corpus: A Human-annotated Dialogue Dataset for Abstractive Summarization'
       type: samsum
     metrics:
-       - name: Validation ROGUE-1
-         type: rogue-1
-         value: 42.621
-       - name: Validation ROGUE-2
-         type: rogue-2
-         value: 21.9825
-       - name: Validation ROGUE-L
-         type: rogue-l
-         value: 33.034
-       - name: Test ROGUE-1
-         type: rogue-1
-         value: 41.3174
-       - name: Test ROGUE-2
-         type: rogue-2
-         value: 20.8716
-       - name: Test ROGUE-L
-         type: rogue-l
-         value: 32.1337 
+    - name: Validation ROGUE-1
+      type: rogue-1
+      value: 42.621
+    - name: Validation ROGUE-2
+      type: rogue-2
+      value: 21.9825
+    - name: Validation ROGUE-L
+      type: rogue-l
+      value: 33.034
+    - name: Test ROGUE-1
+      type: rogue-1
+      value: 41.3174
+    - name: Test ROGUE-2
+      type: rogue-2
+      value: 20.8716
+    - name: Test ROGUE-L
+      type: rogue-l
+      value: 32.1337
+  - task:
+      type: summarization
+      name: Summarization
+    dataset:
+      name: samsum
+      type: samsum
+      config: samsum
+      split: test
+    metrics:
+    - name: ROUGE-1
+      type: rouge
+      value: 41.3282
+      verified: true
+    - name: ROUGE-2
+      type: rouge
+      value: 20.8755
+      verified: true
+    - name: ROUGE-L
+      type: rouge
+      value: 32.1353
+      verified: true
+    - name: ROUGE-LSUM
+      type: rouge
+      value: 38.401
+      verified: true
+    - name: loss
+      type: loss
+      value: 1.4297215938568115
+      verified: true
+    - name: gen_len
+      type: gen_len
+      value: 60.0757
+      verified: true
 ---
 
 ## `bart-large-cnn-samsum`
