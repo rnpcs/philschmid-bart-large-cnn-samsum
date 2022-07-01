@@ -117,7 +117,7 @@ Jeff: and how can I get started?
 Jeff: where can I find documentation? 
 Philipp: ok, ok you can find everything here. https://huggingface.co/blog/the-partnership-amazon-sagemaker-and-hugging-face                                           
 '''
-nlp(conversation)
+summarizer(conversation)
 ```
 
 ## Results
