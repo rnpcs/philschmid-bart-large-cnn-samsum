@@ -16,8 +16,8 @@ model-index:
 - name: bart-large-cnn-samsum
   results:
   - task:
-      name: Abstractive Text Summarization
-      type: abstractive-text-summarization
+      type: summarization
+      name: Summarization
     dataset:
       name: 'SAMSum Corpus: A Human-annotated Dialogue Dataset for Abstractive Summarization'
       type: samsum
