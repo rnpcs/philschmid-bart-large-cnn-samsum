@@ -1,6 +1,7 @@
 
 ---
 language: en
+license: mit
 tags:
 - sagemaker
 - bart
