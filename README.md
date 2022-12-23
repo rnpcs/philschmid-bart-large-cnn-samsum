@@ -85,6 +85,7 @@ model-index:
 
 > If you want to use the model you should try a newer fine-tuned FLAN-T5 version [philschmid/flan-t5-base-samsum](https://huggingface.co/philschmid/flan-t5-base-samsum) out socring the BART version with `+6` on `ROGUE1` achieving `47.24`.
 
+# TRY [philschmid/flan-t5-base-samsum](https://huggingface.co/philschmid/flan-t5-base-samsum)
 
 
 This model was trained using Amazon SageMaker and the new Hugging Face Deep Learning container.
